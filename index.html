@@ -11,41 +11,16 @@
     </head>
     <body>
         <div class="container mt-5 mb-5">
-            <div class="row">
-                <div class="col-md-8 col-lg-6 bg-white rounded-right">
-                    <div class="login d-flex align-items-center py-5">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-9 col-lg-8 mx-auto">
-                                    <h3 class="login-heading mb-4">Welcome back!</h3>
-                                    <form>
-                                        <div class="form-label-group">
-                                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                                            <label for="inputEmail">Email address</label>
-                                        </div>
-                        
-                                        <div class="form-label-group">
-                                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                                            <label for="inputPassword">Password</label>
-                                        </div>
-                        
-                                        <div class="custom-control custom-checkbox mb-3">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                            <label class="custom-control-label" for="customCheck1">Remember password</label>
-                                        </div>
-                                        <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
-                                        <div class="text-center">
-                                            <a class="small" href="#">Forgot password?</a>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+            <div class="row justify-content-center">
+
+                <div class="col-md-7 col-lg-9 bg-white rounded"> 
+                    <div class="text-right">
+                        <button type="button" class="btn btn-outline-primary mt-2" data-toggle="modal" data-target="#exampleModal">
+                            Inscreva-se
+                        </button>
                     </div>
-                </div>
-                <div class="col-md-4 col-lg-6 bg-white rounded-left"> 
                     <div class="markdown p-3">
-                        <h1>XXI Semana da Matemática – 4 a 7 de dezembro/2018.</h1>
+                        <h1> <strong>XXI Semana da Matemática – 4 a 7 de dezembro/2018.</strong> </h1>
                         <p>
                             A <strong>XXI Semana de Matemática</strong> tem como objetivo principal a criação de um ambiente onde estudantes das escolas públicas e privadas, educadores, acadêmicos, professores da universidade e a comunidade em geral possam interagir, trocando experiências profissionais e conhecimentos matemáticos.
                         </p>
@@ -87,7 +62,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                <td>10 h – 12 h 14 h – 16 h</td>
+                                <td>10h – 12h 14h – 16h</td>
                                 <td>Credenciamento</td>
                                 <td>–</td>
                                 <td>Corredor H-108 (Unid. I)</td>
@@ -100,8 +75,46 @@
                 </div>
             </div>
         </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog bg-white rounded" role="document">
+                <div class="modal-content login d-flex py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 col-lg-8 mx-auto">
+                                <h3 class="login-heading mb-4">Welcome back!</h3>
+                                <form>
+                                    <div class="form-label-group">
+                                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                                        <label for="inputEmail">Email address</label>
+                                    </div>
+                    
+                                    <div class="form-label-group">
+                                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                        <label for="inputPassword">Password</label>
+                                    </div>
+                    
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">Remember password</label>
+                                    </div>
+                                    <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
+                                    <div class="text-center">
+                                        <a class="small" href="#">Forgot password?</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script>
+            $('#myModal').on('shown.bs.modal', function () {
+                $('#myInput').trigger('focus')
+            })
+        </script>
     </body>
 </html>
