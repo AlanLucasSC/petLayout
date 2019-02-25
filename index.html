@@ -15,6 +15,9 @@
 
                 <div class="col-md-7 col-lg-8 bg-white rounded"> 
                     <div class="text-right">
+                        <button type="button" class="btn btn-outline-primary mt-2" data-toggle="modal" data-target="#login">
+                            Login
+                        </button>
                         <button type="button" class="btn btn-outline-primary mt-2" data-toggle="modal" data-target="#register">
                             Inscreva-se
                         </button>
@@ -31,7 +34,9 @@
                             Em sua programação, o evento conta com palestrantes, minicursos, oficinas e exposição de trabalhos desenvolvidos pelos alunos e relacionados com a Matemática e o ensino da Matemática nas escolas de educação básica. O evento deve ser também um momento de socialização e integração entre os acadêmicos do curso de graduação, docentes das universidades, alunos da pós-graduação, alunos e professores de escolas da Educação Básica.
                         </p>
                         <ul>
-                            <li> As inscrições poderão ser realizadas até o dia 04/12/2018 na Coordenação do Curso de Matemática (Espaço Multiuso – Sala 1 – Unid. I) ou na Sala H-227 (Unid. I) ou na Sala 5 (Unid. II) com os acadêmicos ANDRESSA BRITTES, Contato: 99929-0565; ARIEL DA SILVA COSTA, Contato: 99830-2296; DANIELLE VELASQUEZ, Contato: 99121-9825; DANIEL SOUZA, Contato: 99695-8925 ou ILMA DANIELLE, Contato: 98437-2330.</li>
+                            <li> 
+                                As inscrições poderão ser realizadas até o dia 04/12/2018 na Coordenação do Curso de Matemática (Espaço Multiuso – Sala 1 – Unid. I) ou na Sala H-227 (Unid. I) ou na Sala 5 (Unid. II) com os acadêmicos ANDRESSA BRITTES, Contato: 99929-0565; ARIEL DA SILVA COSTA, Contato: 99830-2296; DANIELLE VELASQUEZ, Contato: 99121-9825; DANIEL SOUZA, Contato: 99695-8925 ou ILMA DANIELLE, Contato: 98437-2330.
+                            </li>
                         
                             <li>
                                 As inscrições poderão ser realizadas até o dia 04/12/2018 na Coordenação do Curso de Matemática (Espaço Multiuso – Sala 1 – Unid. I) ou na Sala H-227 (Unid. I) ou na Sala 5 (Unid. II) com os acadêmicos ANDRESSA BRITTES, Contato: 99929-0565; ARIEL DA SILVA COSTA, Contato: 99830-2296; DANIELLE VELASQUEZ, Contato: 99121-9825; DANIEL SOUZA, Contato: 99695-8925 ou ILMA DANIELLE, Contato: 98437-2330.
@@ -202,6 +207,36 @@
                                     </div>
 
                                     <button class="mt-3 btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Inscreva-se</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog bg-white rounded" role="document">
+                <div class="modal-content login d-flex py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 col-lg-9 mx-auto">
+                                <h3 class="login-heading mb-4">Login</h3>
+                                <form>
+
+                                    <div class="form-label-group">
+                                        <input type="text" id="rgaLogin" class="form-control" placeholder="RGA" required>
+                                        <label for="rgaLogin">RGA</label>
+                                    </div>
+
+                                    <div class="form-label-group">
+                                        <input type="password" id="password" class="form-control" placeholder="Senha" required>
+                                        <label for="password">Senha</label>
+                                    </div>
+
+                                    <button class="mt-3 btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Login</button>
                                 </form>
                             </div>
                         </div>
